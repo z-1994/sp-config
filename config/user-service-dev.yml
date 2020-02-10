@@ -4,7 +4,10 @@ sp:
 
 spring:
   application:
-    name: user-service
+    name: item-service
+  cloud:
+    config:
+      override-none: true
     
 server:
   port: 8101

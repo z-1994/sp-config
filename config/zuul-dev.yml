@@ -1,6 +1,9 @@
 spring:
   application:
-    name: zuul
+    name: item-service
+  cloud:
+    config:
+      override-none: true
     
 server:
   port: 3001
