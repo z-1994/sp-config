@@ -8,7 +8,11 @@ spring:
     host: 192.168.64.140
     port: 5672
     username: admin
-    password: admin      
+    password: admin
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}       
     
 
 # 启动参数 --server.port 可以覆盖yml配置
