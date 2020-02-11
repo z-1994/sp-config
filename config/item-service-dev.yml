@@ -9,10 +9,7 @@ spring:
     port: 5672
     username: admin
     password: admin
-eureka:
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}       
+       
     
 
 # 启动参数 --server.port 可以覆盖yml配置
@@ -23,3 +20,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
