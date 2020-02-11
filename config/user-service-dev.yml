@@ -5,10 +5,16 @@ sp:
 
 spring:
   application:
-    name: item-service
+    name: user-service
   cloud:
     config:
       override-none: true
+      
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin      
     
 server:
   port: 8101
